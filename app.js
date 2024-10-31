@@ -1,3 +1,15 @@
+/******************************************************************************
+***
+* ITE5315 – Assignment 2
+* I declare that this assignment is my own work in accordance with Humber Academic Policy.
+* No part of this assignment has been copied manually or electronically from any other source
+* (including web sites) or distributed to other students.
+*
+* Name: Kavya Gali Student ID: N01622088 Date: 30-10-2024
+*
+*
+******************************************************************************
+**/
 // Import the Express framework
 const express = require('express');
 // Import the Handlebars engine for templating
@@ -36,7 +48,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Define the route for the home page
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Express' }); 
+    res.render('index', { title: 'Express',name: 'Kavya', 
+        studentID: 'N01622088'  }); 
 });
 
 // Define the route for the /users page
